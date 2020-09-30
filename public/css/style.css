@@ -1,4 +1,7 @@
 /* Projet P2 */
+body {
+    font-family: 'Raleway', sans-serif;
+}
 .main-links {
     display: block;
 }
