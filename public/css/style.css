@@ -2,6 +2,9 @@
 body {
     font-family: 'Raleway', sans-serif;
 }
+#main-wrapper {
+    max-width: 1440px;
+}
 .main-links {
     display: block;
 }
