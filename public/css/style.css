@@ -5,7 +5,7 @@ body {
     margin: 0 auto;
     box-sizing: border-box;
 }
-header, main, footer {
+main, footer {
    padding: 50px;
 }
 a {
@@ -24,17 +24,30 @@ ul {
 header {
     display: flex;
     justify-content: space-between;
+    padding: 50px 50px 0 50px;
 }
 header nav ul {
     width: 400px;
     justify-content: space-between;
 }
-header nav a strong {
+header nav a span {
     color: #0065fc;
+    font-weight: bold;
 }
-header nav a:active {
-    color: #0065fc;
+header nav li {
+    display: flex;
+    height: 64px;
+    width: 150px;
+    align-items: flex-end;
+    margin-top: -50px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+header nav li:hover, header nav li:active, header nav li:focus {
     border-top: 2px solid #0065fc;
+}
+header nav li:hover a, header nav li:active a, header nav li:focus a{
+    color: #0065fc;
 }
 /*selection section*/
 
