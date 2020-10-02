@@ -9,36 +9,33 @@
     <script src="https://kit.fontawesome.com/efb7d708e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="main-wrapper">
-        <header>
-            <div>
-                <div class="logo">
-                    <a href="/">
-                        <img src="images/logo/Reservia.svg" alt="Logo de Reservia" title="Logo de Reservia" />
-                    </a>
-                </div>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p>En plein centre ville ou en pleine nature</p>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li>
-                        <a href="#hostels">Hébergements</a>
-                    </li>
-                    <li>
-                        <a href="#activities">Activités</a>
-                    </li>
-                    <li>
-                        <a class="nav-btn" href="#">S'inscrire</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-        <section>
-            <form id="search-form" role="search" method="post" action="#">
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="images/logo/Reservia.svg" alt="Logo de Reservia" title="Logo de Reservia" />
+            </a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="#hostels">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#activities">Activités</a>
+                </li>
+                <li>
+                    <a href="#"><strong>S'inscrire</strong></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="selection">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <form id="search-form" method="post" action="#">
                 <p>
                     <i class="fas fa-map-marker-alt"></i>
-                    <label class="screen-reader-labels" for="search">Rechercher</label>
                     <input type="search" name="search" id="search" placeholder="Marseille, France" />
                     <input type="submit" id="search-btn" value="Rechercher" />
                 </p>
@@ -66,9 +63,9 @@
             <i class="fas fa-info-circle"></i>
             <output form="search-form" for="search">Plus de 500 logements sont disponibles dans cette ville</output>
         </section>
-        <main>
+        <section id="hostels" class="columns-2">
             <div>
-                <h2 id="hostels">Hébergements à Marseille</h2>
+                <h2>Hébergements à Marseille</h2>
                 <div class="columns-3">
                     <ul>
                         <li>
@@ -162,7 +159,7 @@
             <div>
                 <h2>Les plus populaires</h2>
                 <i class="fas fa-chart-line"></i>
-                <div class="columns-1">
+                <div class="column-1">
                     <ul>
                         <li>
                             <a class="main-links" href="#">
@@ -210,9 +207,9 @@
                 </div>
                 <a href="#">Afficher plus</a>
             </div>
-        </main>
-        <aside class="columns-4">
-            <h2 id="activities">Activités à Marseille</h2>
+        </section>
+        <section id="activities" class="columns-4">
+            <h2>Activités à Marseille</h2>
             <ul>
                 <li>
                     <a class="main-links" href="#">
@@ -251,8 +248,8 @@
                     </a>
                 </li>
             </ul>
-        </aside>
-    </div>
+        </section>
+    </main>
     <footer>
         <div class="footer-links">
             <h4>A propos</h4>
