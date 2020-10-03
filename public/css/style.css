@@ -1,9 +1,13 @@
 /*global*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     font-family: 'Raleway', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 main, footer {
    padding: 50px;
@@ -20,6 +24,10 @@ ul {
     padding: 0;
     display: flex;
 }
+i, input {
+    padding: 16px;
+}
+
 /*header*/
 header {
     display: flex;
@@ -41,7 +49,6 @@ header nav li {
     align-items: flex-end;
     margin-top: -50px;
     justify-content: center;
-    box-sizing: border-box;
 }
 header nav li:hover, header nav li:active, header nav li:focus {
     border-top: 2px solid #0065fc;
@@ -49,8 +56,82 @@ header nav li:hover, header nav li:active, header nav li:focus {
 header nav li:hover a, header nav li:active a, header nav li:focus a{
     color: #0065fc;
 }
-/*selection section*/
 
+/*selection section*/
+#search, #search-btn, form i {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    font-family: 'Raleway', sans-serif;
+}
+#search::placeholder {
+    color: black;
+}
+#search:focus {
+    outline: none;
+}
+#search {
+    border-color: #f2f2f2;
+    font-weight: bold;
+}
+#search-btn {
+    background-color: #0065fc;
+    color: white;
+    cursor: pointer;
+    border-color: #0065fc;
+    border-radius: 0 15px 15px 0;
+}
+#search-btn:active, #search-btn:focus {
+    outline: none;
+}
+form i {
+    background-color: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+    border-color: #f2f2f2;
+    vertical-align: bottom;
+}
+.filters-wrapper, .filters {
+    display: flex;
+    flex-direction: row;
+}
+.filters-wrapper {
+    margin: 20px 0 20px 0;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.filters {
+    border: 2px solid #f2f2f2;
+    border-radius: 50px;
+    margin-left: 32px;
+    max-height: 50px;
+}
+.filters p {
+    padding: 16px;
+    margin: 0;
+}
+.filters-icons {
+    color: #0065fc;
+    background-color: #deebff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: -2px;
+    top: -2px;
+    text-align: center;
+}
+i.fa-child, i.fa-heart, i.fa-dog {
+    font-size: 1.2rem;
+}
+#info {
+    display: inline-block;
+    color: #0065fc;
+    border: 1px solid #f2f2f2;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
 
 /*hostels section*/
 

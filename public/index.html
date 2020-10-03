@@ -34,11 +34,9 @@
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
             <form id="search-form" method="post" action="#">
-                <p>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="search" id="search" placeholder="Marseille, France" />
-                    <input type="submit" id="search-btn" value="Rechercher" />
-                </p>
+                <i class="fas fa-map-marker-alt"></i><!-- to avoid space
+                --><input type="search" name="search" id="search" placeholder="Marseille, France"/><!--to avoid space
+                --><input type="submit" id="search-btn" value="Rechercher"/>
             </form>
             <div class="filters-wrapper">
                 <p>Filtres</p>
@@ -60,7 +58,7 @@
                 </div>
 
             </div>
-            <i class="fas fa-info-circle"></i>
+            <div id="info"><i class="fas fa-info"></i></div>
             <output form="search-form" for="search">Plus de 500 logements sont disponibles dans cette ville</output>
         </section>
         <section id="hostels" class="columns-2">
