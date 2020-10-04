@@ -58,6 +58,9 @@ header nav li:hover a, header nav li:active a, header nav li:focus a{
 }
 
 /*selection section*/
+#search-form {
+    margin-top: 20px;
+}
 #search, #search-btn, form i {
     border-top: 1px solid;
     border-bottom: 1px solid;
@@ -99,6 +102,7 @@ form i {
     margin: 20px 0 20px 0;
     font-weight: bold;
     text-transform: capitalize;
+    margin-top: 32px;
 }
 .filters {
     border: 2px solid #f2f2f2;
@@ -131,10 +135,35 @@ i.fa-child, i.fa-heart, i.fa-dog {
     border-radius: 50%;
     width: 25px;
     height: 25px;
+    text-align: center;
+    margin: 40px 8px 40px 0;
+}
+i.fa-info {
+    padding: 3px 0 3px 0;
 }
 
 /*hostels section*/
-
+.columns-2 {
+    display: flex;
+    justify-content: space-between;
+}
+.columns-2 div {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 40px;
+}
+.columns-2 .main-div {
+    width: 880px;
+}
+.columns-2 .side-div {
+    width: 420px;
+}
+.columns-3 ul {
+    flex-wrap: wrap;
+}
+.column-1 ul {
+    flex-direction: column;
+}
 
 /*activities section*/
 
