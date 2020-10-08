@@ -11,13 +11,12 @@ body {
 }
 main {
     clear: both;
-    padding: 50px 5.334%;
+}
+main, footer {
+    padding: 50px 3.473%;
 }
 aside {
-    padding: 10px 5.334% 60px;
-}
-footer {
-    padding: 50px 8%;
+    padding: 10px 3.473% 60px;
 }
 header nav li, .filters-wrapper, .filters, .main-section, ul, footer {
     display: flex;
@@ -60,11 +59,16 @@ i:not(.fa-star), input {
 }
 
 /***header***/
+header {
+    padding: 0 3.473%;
+    height: 71px;
+}
 .logo {
     float: left;
+    margin-top: 30px;
 }
-header {
-    padding: 50px 3.473% 0;
+.main-nav {
+    float: right;
 }
 header button {
     font-weight: bold;
@@ -77,22 +81,20 @@ header button {
 header button:focus {
     outline: none;
 }
-header nav {
-    float: right;
-}
-header nav li {
-    width: 150px;
+.main-nav li, header button {
     padding-top: 50px;
-    margin-top: -50px;
-    justify-content: center;
 }
-header nav li {
+.main-nav li {
+    justify-content: center;
+    width: 150px;
+}
+.main-nav li, header button {
     border-top: 2px solid transparent;
 }
-header nav li:first-child {
+.main-nav li:first-child {
     border-top: 2px solid #0065fc;
 }
-header nav li:first-child a, header button a, header nav li:hover a, header nav li:active a, header nav li:focus a, i.fa-star, .filters-icons, #info {
+.main-nav li:first-child a, header button a, .main-nav li:hover a, .main-nav li:active a, .main-nav li:focus a, i.fa-star, .filters-icons, #info {
     color: #0065fc;
 }
 form i, .hostels, .best, footer {
@@ -100,14 +102,13 @@ form i, .hostels, .best, footer {
 }
 
 /***selection section***/
-
 #selection {
     padding-bottom: 40px;
 }
 #search-form {
     margin-top: 20px;
 }
-#search, #search-btn, form i {
+#search, #search-btn, form i, form button {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: none;
@@ -124,7 +125,10 @@ form i, .hostels, .best, footer {
     border-color: #f2f2f2;
     font-weight: bold;
 }
-#search-btn {
+form button {
+    display: none;
+}
+#search-btn, form button {
     background-color: #0065fc;
     color: white;
     cursor: pointer;
@@ -138,6 +142,8 @@ form i {
     border-radius: 16px 0 0 16px;
     border-color: #f2f2f2;
     vertical-align: bottom;
+    text-align: center;
+    width: 50px;
 }
 .filters-wrapper, .filters {
     flex-direction: row;
@@ -189,7 +195,6 @@ i.fa-info {
 }
 
 /***hostels section***/
-
 .hostels, .best {
     padding: 2.987%;
 }
@@ -223,7 +228,7 @@ i.fa-info {
     padding: 8px;
 }
 .best-description {
-    padding: 0 16px 8px;
+    padding: 8px 16px;
     float: right;
     height: 100%;
     width: 190px;
@@ -268,7 +273,6 @@ i.fa-chart-line {
 }
 
 /***activities section***/
-
 #activities li {
     box-shadow: 0 3px 15px -12px;
     padding-bottom: 57px;
@@ -304,42 +308,128 @@ i.fa-chart-line {
 }
 
 /***footer***/
+.footer-links {
+    width: 33.33%;
+}
 .footer-links a {
     display: block;
     margin-bottom: 20px;
 }
 
-/*** large phones and portrait tablets ***/
-@media only screen and (min-width:481px) {
+/*** laptop, desktop SD ***/
+@media only screen and (max-width:1439px) {
 
 }
 
-/*** landscape tablets ***/
-@media only screen and (min-width:768px) {
+/*** landscape tablet ***/
+@media only screen and (max-width:1024px) {
 
 }
 
-/*** laptops, desktops ***/
-@media only screen and (min-width:1025px) {
-
-}
-
-/*** laptops, desktops HD ***/
-@media only screen and (min-width:1440px) {
-    main, footer {
-        padding-left: 3.473%;
-        padding-right: 3.473%;
+/*** large mobile and portrait tablet ***/
+@media only screen and (max-width:767px) {
+    main, aside {
+        padding-left: 5.334%;
+        padding-right: 5.334%;
     }
-    aside {
-        padding-left: 3.473%;
-        padding-right: 3.473%;
+
+}
+
+/*** mobile ***/
+@media only screen and (max-width:480px) {
+    header {
+        padding: 0;
     }
-    .footer-links {
-        width: 33.33%;
+    .logo {
+        margin-left: 3.473%;
     }
     header button {
-        order: 1;
+        margin-right: 3.473%;
+        padding-top: 45px;
     }
-
-
+    .main-nav {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .main-nav li {
+        width: 50%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+    .main-nav li:first-child {
+        border-bottom: 2px solid #0065fc;
+        border-top: none;
+    }
+    main {
+        padding-top: 30px;
+    }
+    main, aside {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #search-form {
+        display: flex;
+    }
+    #search {
+        flex-grow: 1;
+    }
+    #search-btn {
+        display: none;
+    }
+    form button {
+        display: inline;
+        width: 50px;
+        height: 50px;
+    }
+    .filters-wrapper {
+        flex-flow: row wrap;
+    }
+    .filters-wrapper p {
+        width: 100%;
+    }
+    .filters {
+        margin: 0 8px 10px 0;
+    }
+    .main-section {
+        flex-direction: column-reverse;
+    }
+    .best, .hostels {
+        width: 100%;
+        border-radius: 0;
+    }
+    .best-description {
+        width: 52%;
+    }
+    .results ul {
+        flex-direction: column;
+    }
+    .results li {
+        width: 100%;
+    }
+    .hostels {
+        background-color: initial;
+        margin-top: 40px;
+    }
+    #selection, #activities {
+        padding-left: 2.987%;
+        padding-right: 2.987%;
+    }
+    #activities ul {
+        flex-wrap: nowrap;
+        height: initial;
+    }
+    #activities li {
+        height: 190px !important;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    footer {
+        flex-direction: column;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .footer-links {
+        width: 100%;
+        margin-bottom: 24px;
+    }
 }
