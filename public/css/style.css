@@ -1,7 +1,5 @@
 /***global***/
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body {
@@ -70,31 +68,28 @@ header {
 .main-nav {
     float: right;
 }
-header button {
+#signup {
     font-weight: bold;
-    background-color: transparent;
+    /*background-color: transparent;
     border: none;
     font-family: inherit;
-    font-size: inherit;
+    font-size: inherit;*/
     float: right;
 }
-header button:focus {
-    outline: none;
-}
-.main-nav li, header button {
+.main-nav li, #signup {
     padding-top: 50px;
 }
 .main-nav li {
     justify-content: center;
     width: 150px;
 }
-.main-nav li, header button {
+.main-nav li, #signup {
     border-top: 2px solid transparent;
 }
 .main-nav li:first-child {
     border-top: 2px solid #0065fc;
 }
-.main-nav li:first-child a, header button a, .main-nav li:hover a, .main-nav li:active a, .main-nav li:focus a, i.fa-star, .filters-icons, #info {
+.main-nav li:first-child a, #signup, .main-nav li:hover a, .main-nav li:active a, .main-nav li:focus a, i.fa-star, .filters-icons, #info {
     color: #0065fc;
 }
 form i, .hostels, .best, footer {
@@ -387,7 +382,7 @@ i.fa-chart-line {
     .logo {
         margin-left: 3.473%;
     }
-    header button {
+    #signup {
         margin-right: 3.473%;
         padding-top: 45px;
     }
