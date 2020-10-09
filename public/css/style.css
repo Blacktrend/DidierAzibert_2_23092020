@@ -70,10 +70,6 @@ header {
 }
 #signup {
     font-weight: bold;
-    /*background-color: transparent;
-    border: none;
-    font-family: inherit;
-    font-size: inherit;*/
     float: right;
 }
 .main-nav li, #signup {
