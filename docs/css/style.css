@@ -112,6 +112,8 @@ form i, .hostels, .best, footer {
 }
 #search {
     height: 50px;
+    -webkit-appearance: none; /*Safari fix */
+    appearance: none;
 }
 #search::placeholder {
     color: black;
@@ -289,6 +291,7 @@ i.fa-chart-line {
 }
 #activities li:nth-child(3n+1) {
     flex-grow: 1;
+    height: 390px; /*Safari fix */
 }
 #activities li:nth-child(2) {
     height: 239px;
