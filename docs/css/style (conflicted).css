@@ -460,14 +460,7 @@ i.fa-chart-line {
         /*display: none;*/
     }
     #search-btn::before {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f002";
+        content: '/f002';
     }
     form button {
         display: inline;
@@ -481,3 +474,4 @@ i.fa-chart-line {
     #activities li:nth-child(1n+1) {
         height: 190px;
     }
+}
