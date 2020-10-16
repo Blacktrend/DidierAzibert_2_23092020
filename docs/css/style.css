@@ -50,7 +50,7 @@ i:not(.fa-star), input {
     border-radius: 16px;
 }
 .main-img, .best-img, .activities-img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 16px 16px 0 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -100,7 +100,10 @@ form i, .hostels, .best, footer {
 #search-form {
     margin-top: 20px;
 }
-#search, #search-btn, form i, form button {
+#search-form button i {
+    display: none;
+}
+#search, #search-form button, form i {
     border-top: 1px solid;
     border-bottom: 1px solid;
     border-left: none;
@@ -120,17 +123,16 @@ form i, .hostels, .best, footer {
     border-color: #f2f2f2;
     font-weight: bold;
 }
-form button {
-    display: none;
-}
-#search-btn, form button {
+#search-form button {
     background-color: #0065fc;
     color: white;
     cursor: pointer;
     border-color: #0065fc;
     border-radius: 0 16px 16px 0;
+    height: 50px;
+
 }
-#search-btn:active, #search-btn:focus {
+#search-form button:active, #search-form button:focus {
     outline: none;
 }
 form i {
@@ -212,9 +214,12 @@ i.fa-info {
 .main-section li {
     margin-bottom: 30px;
     overflow: hidden;
-    padding: 5px;
+    /*padding: 5px;*/
     background: white;
     box-shadow: 0 0 15px -10px;
+}
+.main-section img {
+    padding: 5px;
 }
 .main-img {
     height: 114px;
@@ -248,7 +253,7 @@ i.fa-chart-line {
     clear: both;
 }
 .best-img {
-    border-radius: 10px 0 0 10px;
+    border-radius: 16px 0 0 16px;
     width: 127px;
     margin-right: 12px;
 }
@@ -348,9 +353,6 @@ i.fa-chart-line {
     #activities li:nth-child(6) img {
         object-position: center;
     }
-
-
-
 }
 
 /*** landscape tablet ***/
@@ -371,7 +373,6 @@ i.fa-chart-line {
     .best-results li {
         width: 65%;
     }
-
 }
 
 /*** large mobile and portrait tablet ***/
@@ -440,44 +441,28 @@ i.fa-chart-line {
         width: 100%;
         margin-bottom: 24px;
     }
-
-
-
-
-
 }
 
 /*** mobile ***/
 @media only screen and (max-width:480px) {
-
     #search-form {
         display: flex;
     }
     #search {
         flex-grow: 1;
     }
-    #search-btn {
-        /*display: none;*/
+    #search-form button span {
+        display: none;
     }
-    #search-btn::before {
+    #search-form button i {
         display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f002";
-    }
-    form button {
-        display: inline;
-        width: 50px;
-        height: 50px;
+        background-color: #0065fc;
+        border: none;
     }
     .results li, .best-results li, #activities li {
         width: 100%;
     }
-
     #activities li:nth-child(1n+1) {
         height: 190px;
     }
+}
